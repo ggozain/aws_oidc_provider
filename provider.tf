@@ -1,10 +1,10 @@
 terraform {
-  # cloud {
-  #   organization = "gozain-lab"
-  #   workspaces {
-  #     name = "aws_oidc_provider"
-  #   }
-  # }
+  cloud {
+    organization = "gozain-lab"
+    workspaces {
+      name = "aws_oidc_provider"
+    }
+  }
 
   required_providers {
     aws = {
