@@ -46,7 +46,7 @@ resource "aws_iam_policy" "tfc_policy" {
    {
      "Effect": "Allow",
      "Action": [
-       "ec2:*"
+       "ec2:*"  
      ],
      "Resource": "*"
    }
@@ -54,6 +54,7 @@ resource "aws_iam_policy" "tfc_policy" {
 }
 EOF
 }
+
 
 resource "aws_iam_role_policy_attachment" "tfc_policy_attachment" {
   role       = aws_iam_role.tfc_role.name
