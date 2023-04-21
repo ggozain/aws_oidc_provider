@@ -1,2 +1,2 @@
 tfc_organization_name = "gozain-lab"
-tfc_workspace_name    = "learn-terraform-dynamic-credentials"
+tfc_workspace_name    = "aws_oidc_provider"
