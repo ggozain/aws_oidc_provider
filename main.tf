@@ -41,17 +41,27 @@ resource "aws_iam_policy" "tfc_policy" {
 
   policy = <<EOF
 {
- "Version": "2012-10-17",
- "Statement": [
-   {
-     "Effect": "Allow",
-     "Action": [
-       "iam:*",
-       "ec2:*" 
-     ],
-     "Resource": "*"
-   }
- ]
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "iam:*",
+                "eks:DescribeNodegroup",
+                "eks:DescribeFargateProfile",
+                "eks:DescribeAddonConfiguration",
+                "eks:DescribeIdentityProviderConfig",
+                "eks:DescribeUpdate",
+                "ec2:*",
+                "eks:DescribeCluster",
+                "eks:DescribeAddonVersions",
+                "logs:CreateLogGroup",
+                "eks:DescribeAddon"
+            ],
+            "Resource": "*"
+        }
+    ]
 }
 EOF
 }
