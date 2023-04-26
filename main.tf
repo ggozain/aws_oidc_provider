@@ -47,17 +47,7 @@ resource "aws_iam_policy" "tfc_policy" {
             "Sid": "VisualEditor0",
             "Effect": "Allow",
             "Action": [
-                "iam:*",
-                "eks:DescribeNodegroup",
-                "eks:DescribeFargateProfile",
-                "eks:DescribeAddonConfiguration",
-                "eks:DescribeIdentityProviderConfig",
-                "eks:DescribeUpdate",
-                "ec2:*",
-                "eks:DescribeCluster",
-                "eks:DescribeAddonVersions",
-                "logs:CreateLogGroup",
-                "eks:DescribeAddon"
+                "*"
             ],
             "Resource": "*"
         }
